@@ -11,7 +11,7 @@ resp = req.open('https://login.vk.com/?act=login', urllib.urlencode({'email': '8
 
 page = req.open('https://vk.com/issahar').read()
 print page.decode('cp1251')
-print '\n\tolololo'
+
 """
 page = urllib.urlopen('http://vk.com/issahar/')
 pageWritten = page.read()
