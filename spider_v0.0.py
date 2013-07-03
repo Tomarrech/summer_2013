@@ -12,11 +12,14 @@ resp = req.open('https://login.vk.com/?act=login', urllib.urlencode({'email': '8
 page = req.open('https://vk.com/id216378560').read().decode('cp1251')
 
 xmldata = lxml.html.document_fromstring(page)
-Uname = xmldata.xpath('//div[@class="page_name fl_l ta_l"]/text()')
+UserName = xmldata.xpath('//div[@class="page_name fl_l ta_l"]/text()')
+UserStatus = xmldata.xpath('//span[@class="current_text"]/text()')
 
-print 'name is %s', Uname[0]
-
-
-
-
+#UserCity = xmldata.xpath('//div[@href="/search?c[name]=0&c[section]=people&c[hometown]="]/text()')
+tree = lxml.etree.HTML(page)
+print tree.xpath('/html/body/div[11]/div/div/div/div[3]/div[3]/div/div/div/div/div[2]/div/div/div/div[2]/div[2]/a')
+print "name is ", UserName[0]
+print '\nstatus is: ', UserStatus[0]
+print '\ncity is '
+print "END!"
 
