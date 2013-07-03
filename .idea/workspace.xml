@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ceb6b46-e86d-4ed5-a261-0eaa4eaa9026" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spider_v0.0.py" afterPath="$PROJECT_DIR$/spider_v0.0.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="summer_2013.iws" />
@@ -11,7 +10,7 @@
     <file path="/db-module.py" changelist="6ceb6b46-e86d-4ed5-a261-0eaa4eaa9026" time="1372796011121" ignored="false" />
     <file path="/a.py" changelist="6ceb6b46-e86d-4ed5-a261-0eaa4eaa9026" time="1372796030890" ignored="false" />
     <file path="/start_script.py" changelist="6ceb6b46-e86d-4ed5-a261-0eaa4eaa9026" time="1372796036585" ignored="false" />
-    <file path="/Dummy.txt" changelist="6ceb6b46-e86d-4ed5-a261-0eaa4eaa9026" time="1372876782979" ignored="false" />
+    <file path="/Dummy.txt" changelist="6ceb6b46-e86d-4ed5-a261-0eaa4eaa9026" time="1372887859778" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,7 +317,11 @@
       <created>1372876790816</created>
       <updated>1372876790816</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="PyCharm %TIME%">
+      <created>1372887864652</created>
+      <updated>1372887864652</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
