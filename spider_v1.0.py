@@ -1,15 +1,12 @@
 __author__ = 'Tomarrech'
 #http://static.nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-recent.xml
-import urllib2, urllib
-from bs4 import BeautifulSoup
+import urllib2
+import time
+from BS_parsing import Parsing
 
-soup = BeautifulSoup(open('nvdcve-2.0-recent.xml'))
-entries = soup.findAll('entry')
+file = urllib2.urlopen('http://static.nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-2003.xml')
 
-for i in entries:
-    for k in i.findAll('vuln:cve-id'):
-        print 'name: ',k.string
-    for k in i.findAll('vuln:reference'):
-        print "reference: ",k.string
-    for k in i.findAll('vuln:summary'):
-        print "summary: ",k.string
+time1 = time.time()
+ara = Parsing(file, 'vuln:cve-id', 'vuln:reference', 'vuln:summary')
+
+print '\n\nparsing complited for', time.time()-time1, 'sec'
