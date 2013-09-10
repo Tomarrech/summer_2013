@@ -1,14 +1,17 @@
 __author__ = 'issahar'
-import urllib2
-import time
-from BS_parsing import Parsing
+import db_module, xml_downloader
 
-link = 'http://static.nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-recent.xml'
-xml = urllib2.urlopen(link)
-time1 = time.time()
-Parsing(xml, 'vuln:cve-id', 'vuln:product', 'vuln:summary', 'vuln:published-datetime')
-
-print '\n\nparsing complited for', time.time()-time1, 'sec'
-
-
-
+while True:
+    print "Chose what you want to do:\n\t1)download all files\n" \
+          "\t2)update db\n\t3)search by ib in db\n\t4)clear db\n\t5)exit"
+    key = input('\=> ')
+    if key == 1:
+        xml_downloader.all_download()
+    if key == 2:
+        break
+    if key == 3:
+        db_module.search()
+    if key == 4:
+        break
+    if key == 5:
+        exit('bye')
